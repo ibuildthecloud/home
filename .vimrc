@@ -1,45 +1,40 @@
-set rtp+=/home/darren/.local/go/misc/vim
-"filetype plugin indent on
-syntax on
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-autocmd BufRead *.vala,*.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-au BufRead,BufNewFile *.vala,*.vapi setfiletype vala
+Plugin 'fatih/molokai'
+Plugin 'fatih/vim-go'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'honza/vim-snippets'
+Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'SirVer/ultisnips'
+Plugin 'Valloric/YouCompleteMe'
 
-" Disable valadoc syntax highlight
-"let vala_ignore_valadoc = 1
+call vundle#end()
+filetype plugin indent on 
 
-" Enable comment strings
-let vala_comment_strings = 1
-
-" Highlight space errors
-"let vala_space_errors = 1
-" Disable trailing space errors
-"let vala_no_trail_space_error = 1
-" Disable space-tab-space errors
-"let vala_no_tab_space_error = 1
-
-" Minimum lines used for comment syncing (default 50)
-"let vala_minlines = 120
-
-set sw=4
-set bs=2                    " allow backspacing over everything in insert mode
-set autoindent                      " always set autoindenting on
+" Random stuff
+set autoindent
+set bs=2
 set cinkeys=0{,0},:,0#,!,!^F
-set smartindent
-set ignorecase
-set smartcase
-set ts=4
-set shiftround
-set shiftwidth=4
-set expandtab
-set showcmd
-set incsearch
-set scrolloff=4
-set wildmode=list:longest,full
-set showmatch matchtime=3
 set diffopt+=iwhite
-set history=50              " keep 50 lines of command line history
-set ruler                   " show the cursor position all the time
+set expandtab
+set history=50
+set hlsearch
+set ignorecase
+set incsearch
+set ruler
+set scrolloff=2
+set shiftround
+set showcmd
+set showmatch matchtime=3
+set smartcase
+set smartindent
+set sw=4
+set ts=4
+set wildmode=list:longest,full
 
 nmap :W :w
 nmap :X :x
@@ -66,18 +61,10 @@ nmap <C-n> :Texplore<CR>
 nmap <M-Left> :tabp<CR>
 nmap <M-Right> :tabn<CR>
 
-"set mouse=a
-"set spell
 set switchbuf=usetab,newtab
 
-map <Leader>n <plug>NERDTreeTabsToggle<CR>
+"nmap <F8> :w<CR>:!py.test -v -s --pdb<CR>
 
-call pathogen#infect()
+let @s='/void set4Y3jpncwRETURN/set3xiwithjoreturn this;'
 
-let g:NERDTreeWinSize = 20
-
-set hlsearch
-set incsearch
-
-nmap <F8> :w<CR>:!py.test --pdb<CR>
-set colorcolumn=80
+autocmd FileType javascript setlocal sw=2 ts=2
