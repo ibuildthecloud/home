@@ -1,0 +1,33 @@
+@import url("/usr/share/themes/Ambiance/gtk-3.0/gtk.css");
+
+TerminalWindow,
+TerminalWindow.background {
+    background-color: @dark_bg_color;
+    color: @dark_fg_color;
+}
+
+TerminalWindow .notebook {
+    background-image: none;
+    background-color: shade (@dark_bg_color, 1.02);
+    color: @selected_fg_color;
+    border-radius: 3;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, right top,
+                                           from (shade (@dark_bg_color, 0.93)),
+                                           to (shade (@dark_bg_color, 0.93)));
+    -unico-inner-stroke-width: 0;
+    -unico-outer-stroke-width: 0;
+}
+
+TerminalWindow .notebook tab:active {
+    background-image: none;
+    background-color: shade (@dark_bg_color, 1.20);
+    color: @selected_fg_color;
+    border-radius: 3px;
+
+    -unico-border-gradient: -gtk-gradient (linear, left top, right top,
+                                           from (shade (@dark_bg_color, 0.93)),
+                                           to (shade (@dark_bg_color, 0.93)));
+    -unico-inner-stroke-width: 0;
+    -unico-outer-stroke-width: 0;
+}

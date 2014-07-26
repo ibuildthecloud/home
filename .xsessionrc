@@ -1,0 +1,3 @@
+#!/bin/bash
+
+${HOME}/src/home/setup/load.sh
