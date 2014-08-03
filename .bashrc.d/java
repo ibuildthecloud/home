@@ -1,0 +1,2 @@
+export JAVA_HOME=~/.local/java
+export PATH=$JAVA_HOME/bin:$PATH

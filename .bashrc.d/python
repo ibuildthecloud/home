@@ -1,0 +1,1 @@
+export PYTHONSTARTUP=~/.local/bin/startup.py

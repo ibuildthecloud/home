@@ -1,0 +1,3 @@
+export GOROOT=~/.local/go
+export GOPATH=~/.local/gocode
+export PATH=$PATH:${GOROOT}/bin

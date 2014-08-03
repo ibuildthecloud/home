@@ -1,0 +1,5 @@
+export CATTLE_URL=http://localhost:8080/v1
+export CATTLE_ACCESS_KEY=admin
+export CATTLE_SECRET_KEY=adminpass
+
+eval "$(register-python-argcomplete cattle)"

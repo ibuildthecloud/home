@@ -99,12 +99,18 @@ arrow-shadow-color='#dcdcdcd9'
 thumb-color='#0000007f'
 font-background-color='#0000007f'
 
-[profiles/darren/plugins/grid]
-put-left-key='<Control><Alt>KP_4'
-put-right-key='<Control><Alt>KP_6'
+[profiles/darren/plugins/freewins]
+cross-line-color='#1800ffff'
+snap-threshold=50
+circle-color='#54befb80'
+line-color='#1800ffff'
 
 [profiles/darren/plugins/animation]
 unminimize-effects=['animation:Glide 2']
+
+[profiles/darren/plugins/grid]
+put-left-key='<Control><Alt>KP_4'
+put-right-key='<Control><Alt>KP_6'
 
 [profiles/darren/plugins/decor]
 active-shadow-color='#00000080'
@@ -114,6 +120,10 @@ inactive-shadow-color='#000000ff'
 ground-color1='#b3b3b3cc'
 ground-color2='#b3b3b300'
 x-offset=48
+
+[profiles/darren/plugins/screenshot]
+selection-outline-color='#2f2f4f9f'
+selection-fill-color='#2f2f4f4f'
 
 [profiles/darren/plugins/staticswitcher]
 speed=50.0
