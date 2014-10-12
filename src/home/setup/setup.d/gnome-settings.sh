@@ -12,6 +12,8 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/terminal '"<Control><A
 dconf write /org/gnome/desktop/background/picture-options '"none"'
 dconf write /org/gnome/desktop/background/primary-color '"#000000"'
 
+gconftool-2 -s  --type string /apps/gnome-do/preferences/Do/Platform/Common/AbstractKeyBindingService/Summon_Do '<Super>space'
+
 gconftool-2 -s  --type string /apps/gnome-terminal/keybindings/prev_tab '<Shift>Left'
 gconftool-2 -s  --type string /apps/gnome-terminal/keybindings/next_tab '<Shift>Right'
 gconftool-2 -s  --type string /apps/gnome-terminal/profiles/Default/scrollbar_position hidden
