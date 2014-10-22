@@ -45,7 +45,7 @@ download()
     tmpd=$(mktemp -d)
     TEMP_FILES+=($tmpd)
 
-    tar xv${comp}f $tmp -C $tmpd --strip-components 1
+    tar xv${comp}f $tmp -C $tmpd --strip-components ${TAR_STRIP:-1}
 
     if [ -n "$symlink" ]; then
         ln -s $dest $symlink
