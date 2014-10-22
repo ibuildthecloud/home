@@ -1,2 +1,2 @@
 
-alias git-home="${HOME}/src/home/git.sh"
+alias git-home="${HOME}/.home/git.sh"
