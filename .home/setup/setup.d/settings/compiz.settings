@@ -134,9 +134,9 @@ fire-color='#ff3305ff'
 
 [profiles/darren/plugins/core]
 hsize=4
-lower-window-button='<Control>Button6'
+lower-window-button='<Control>Button8'
 raise-window-button='Disabled'
-outputs=['1366x768+0+0']
+outputs=['1366x768+0+1152', '1200x1920+1366+0', '1200x1920+2566+0']
 active-plugins=['core', 'composite', 'opengl', 'decor', 'move', 'resize', 'commands', 'gnomecompat', 'regex', 'compiztoolbox', 'mousepoll', 'vpswitch', 'imgpng', 'animation', 'place', 'expo', 'grid', 'snap', 'workarounds', 'wall', 'unitymtgrabhandles', 'ezoom', 'session', 'staticswitcher', 'fade', 'scale', 'unityshell']
 
 [profiles/darren/plugins/shift]

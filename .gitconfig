@@ -1,9 +1,11 @@
 [user]
 	name = Darren Shepherd
-	email = darren.s.shepherd@gmail.com
+	email = darren@rancher.com
 [diff]
 	tool = meld
 [reviewboard]
 	url = https://reviews.apache.org
 [color]
 	ui = auto
+[alias]
+    hist = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit

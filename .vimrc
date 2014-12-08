@@ -70,3 +70,5 @@ let @s='/void set4Y3jpncwRETURN/set3xiwithjoreturn this;'
 autocmd FileType javascript setlocal sw=2 ts=2
 
 let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
