@@ -246,17 +246,18 @@ color='#ffdf3fff'
 
 [integrated]
 display-all-workspaces=false
-run-command-1=['disabled']
+run-command-1=['<Super>d']
 run-command-10=['disabled']
 run-command-11=['disabled']
 command-window-screenshot='gnome-screenshot --window'
+run-command-2=['disabled']
+command-1='dmenu_run'
 run-command-12=['disabled']
+run-command-5=['disabled']
 run-command-3=['disabled']
 run-command-4=['disabled']
-run-command-2=['disabled']
+run-command-8=['disabled']
 run-command-6=['disabled']
 run-command-7=['disabled']
-run-command-5=['disabled']
 run-command-9=['disabled']
-run-command-8=['disabled']
 show-hud=['disabled']

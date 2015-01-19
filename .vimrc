@@ -11,6 +11,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'terryma/vim-multiple-cursors'
 
 call vundle#end()
 filetype plugin indent on 
@@ -44,6 +45,8 @@ nmap :Q :q
 nnoremap \tp :set invpaste paste?<CR>
 nmap <F4> \tp
 imap <F4> <C-O>\tp
+nmap <F8> :GoBuild<CR>
+nmap <F7> :GoTest<CR>
 set pastetoggle=<F4>
 
 highlight Search term=reverse  ctermbg=4 ctermfg=3

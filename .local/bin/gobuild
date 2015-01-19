@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ -f ./build/bootstrap.envs ];then
+    . ./build/bootstrap.envs
+fi
+
+export GOPATH=$(pwd)/vendor:$(pwd)/Godeps/_workspace:$(pwd)/gopath
+
+PACKAGE=./gopath/src/$1
+
+shift 1
+
+if [ -L ${PACKAGE} ]; then
+    rm ${PACKAGE}
+fi
+
+if [ ! -e ${PACKAGE} ]; then
+    mkdir -p $(dirname $PACKAGE)
+    ln -s $(pwd) $PACKAGE
+fi
+
+echo export GOPATH=$GOPATH
+
+go build "$@"
