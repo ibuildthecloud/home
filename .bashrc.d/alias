@@ -1,2 +1,8 @@
 
 alias git-home="${HOME}/.home/git.sh"
+alias reg="${HOME}/src/cattle/tools/development/register-localhost.sh"
+alias clearsshlocal="ssh-keygen -f "/home/darren/.ssh/known_hosts" -R [localhost]:2222"
+
+alias docker1="docker exec -it host1 docker"
+alias docker2="docker exec -it host2 docker"
+alias docker3="docker exec -it host3 docker"

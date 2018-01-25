@@ -34,18 +34,10 @@ download()
 
     curl -L $src > $tmp
 
-    local comp=z
-
-    case $src in
-        *.tar.bz2)
-            comp=j
-            ;;
-    esac
-
     tmpd=$(mktemp -d)
     TEMP_FILES+=($tmpd)
 
-    tar xv${comp}f $tmp -C $tmpd --strip-components ${TAR_STRIP:-1}
+    tar xvf $tmp -C $tmpd --strip-components ${TAR_STRIP:-1}
 
     if [ -n "$symlink" ]; then
         ln -s $dest $symlink

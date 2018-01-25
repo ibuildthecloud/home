@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-notifyd" version="1.0">
+  <property name="notify-location" type="uint" value="2"/>
+  <property name="theme" type="string" value="Numix"/>
+  <property name="initial-opacity" type="double" value="0.800000"/>
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="Electron"/>
+      <value type="string" value="Firefox"/>
+      <value type="string" value="Gogland"/>
+      <value type="string" value="GoLand"/>
+      <value type="string" value="IDEA"/>
+      <value type="string" value="jetbrains-toolbox"/>
+      <value type="string" value="nm-applet"/>
+      <value type="string" value="org.gnome.Software"/>
+      <value type="string" value="PyCharm"/>
+      <value type="string" value="Spotify"/>
+      <value type="string" value="Thunar"/>
+      <value type="string" value="thunar-volman"/>
+      <value type="string" value="Xfce volume daemon"/>
+      <value type="string" value="xfce4-power-manager"/>
+    </property>
+  </property>
+</channel>

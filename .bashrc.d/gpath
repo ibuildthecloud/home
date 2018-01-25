@@ -1,0 +1,95 @@
+#!/bin/bash
+
+GPATH_BASE=
+
+gpath()
+{
+    _gpath_lookup
+    OLD_PS1="$PS1"
+    PS1="($(basename $(pwd)))$PS1"
+    GPATH_BASE=$(pwd)
+    cd $GOPATH_SRC
+}
+
+gpathpush()
+{
+    GOPATH="$(readlink -f $1):$GOPATH"
+}
+
+ungpath()
+{
+    cd "$GOPATH_APP_SRC"
+    PS1="$OLD_PS1"
+    GOPATH="$OLD_GOPATH"
+    PATH="$OLD_GPATH"
+}
+
+cdg()
+{
+    cd "$GOPATH_SRC"
+}
+
+cds()
+{
+    cd "$GOPATH_APP_SRC"
+}
+
+_gpath_lookup()
+{
+    if [[ $# -gt 0 && -d "$1" ]]; then
+        cd $1
+    fi
+
+    HASH=$(pwd | sha1sum | awk '{print $1}')
+    #HASH=${HASH:0:8}
+    OLD_GOPATH="$GOPATH"
+    OLD_GPATH="$PATH"
+    GOPATH="${HOME}/.gpath/${HASH}"
+    PATH="$GOPATH/bin:$PATH"
+
+    if [ -e .package ]; then
+        PACKAGE=$(<.package)
+    elif [ -e ${GOPATH}/.package ]; then
+        PACKAGE=$(<${GOPATH}/.package)
+    else
+        DEF=$(git remote -vv | grep github.com | awk '{print $2}' | sed -e 's/\.git$//' -e 's!https*://!!' -e 's!git@github.com:!github.com/!' | sort -u)
+        echo "Enter package name ($DEF)"
+        read PACKAGE
+
+        if [ -z "$PACKAGE" ]; then
+            PACKAGE=$DEF
+        fi
+
+        mkdir -p ${GOPATH}
+        echo ${PACKAGE} > ${GOPATH}/.package
+    fi
+
+    GOPATH_SRC="${GOPATH}/src/$(dirname ${PACKAGE})/$(basename $PACKAGE)"
+    GOPATH_APP_SRC="$(pwd)"
+
+    #if [ -d "${GOPATH_SRC}" ]; then
+    if [ -L "${GOPATH_SRC}" ]; then
+        rm ${GOPATH_SRC}
+    fi
+    mkdir -p ${GOPATH_SRC}
+    if cat /proc/mounts | awk '{print $2}' | grep -w ${GOPATH_SRC}; then
+        #if [[ -d vendor && ! -d Godeps ]]; then
+        #    GOPATH="${GOPATH}:${GOPATH}/vendor"
+        #fi
+        echo export GOPATH=${GOPATH}
+        return
+    fi
+
+    mkdir -p ${GOPATH}/src/$(dirname ${PACKAGE})
+
+    echo ${PACKAGE} > ${GOPATH}/.package
+
+    #ln -s "$GOPATH_APP_SRC" "$GOPATH_SRC"
+    sudo mount --bind "$GOPATH_APP_SRC" "$GOPATH_SRC"
+
+    #if [[ -d vendor && ! -d Godeps ]]; then
+    #    mkdir -p ${GOPATH}/vendor
+    #    ln -s ${GOPATH_APP_SRC}/vendor ${GOPATH}/vendor/src
+    #    GOPATH="${GOPATH}:${GOPATH}/vendor"
+    #fi
+}

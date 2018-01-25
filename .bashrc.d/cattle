@@ -1,3 +1,6 @@
+if [ -z "$RANCHER_CLIENT_CONFIG" ]; then
+    export RANCHER_URL=http://localhost:8080/v1/projects/1a5/schemas
+fi
 export CATTLE_URL=http://localhost:8080/v1
 export CATTLE_ACCESS_KEY=admin
 export CATTLE_SECRET_KEY=adminpass

@@ -1,25 +1,28 @@
 set nocompatible
-filetype off
+filetype on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'fatih/molokai'
-Plugin 'fatih/vim-go'
 Plugin 'gmarik/Vundle.vim'
-Plugin 'honza/vim-snippets'
-Plugin 'kien/ctrlp.vim'
+Plugin 'fatih/vim-go'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'majutsushi/tagbar'
-Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'terryma/vim-multiple-cursors'
+" Plugin 'Shougo/neocomplete'
 
 call vundle#end()
 filetype plugin indent on 
 
+" Neocomplete settings
+" let g:neocomplete#enable_at_startup = 1
+" let g:neocomplete#enable_auto_select = 1
+" Make TAB complete work the way I want
+" inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 " Random stuff
 set autoindent
 set bs=2
-set cinkeys=0{,0},:,0#,!,!^F
+" set cinkeys=0{,0},:,0#,!^F
 set diffopt+=iwhite
 set expandtab
 set history=50
@@ -66,12 +69,15 @@ nmap <M-Right> :tabn<CR>
 
 set switchbuf=usetab,newtab
 
-"nmap <F8> :w<CR>:!py.test -v -s --pdb<CR>
+nmap <F8> :w<CR>:GoBuild<CR>
+nmap <F9> :w<CR>:GoTest<CR>
 
 let @s='/void set4Y3jpncwRETURN/set3xiwithjoreturn this;'
 
 autocmd FileType javascript setlocal sw=2 ts=2
+autocmd FileType yaml setlocal sw=2 ts=2
 
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:go_fmt_command = "goimports"

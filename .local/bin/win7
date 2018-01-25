@@ -6,7 +6,7 @@
 
 sudo ls
 sudo kvm \
-    -m 1024 \
+    -m 2048 \
     -smp cores=2 \
     -drive file=/dev/sda,if=virtio \
     -usbdevice tablet \
@@ -14,6 +14,7 @@ sudo kvm \
     -rtc base=localtime \
     -display none \
     -vga qxl \
+    -net nic -net user,hostfwd=tcp:127.0.0.1:2223-:22 \
     -spice port=9999,password=win7 \
     -device virtio-serial-pci,id=virtio-serial0,max_ports=16,bus=pci.0,addr=0x5 \
     -chardev spicevmc,name=vdagent,id=vdagent \

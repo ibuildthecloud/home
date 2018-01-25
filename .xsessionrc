@@ -1,3 +1,4 @@
 #!/bin/bash
 
+export LANG=en_US.UTF-8
 ${HOME}/.home/setup/load.sh

@@ -1,3 +1,5 @@
 export GOROOT=~/.local/go
-export GOPATH=~/.local/gocode
-export PATH=$PATH:${GOROOT}/bin:${GOPATH}/bin
+if [ -z "$GOPATH" ]; then
+    export GOPATH=~/.local/gocode
+fi
+export PATH=$PATH:${GOROOT}/bin:${GOPATH}/bin:~/.local/gocode/bin
