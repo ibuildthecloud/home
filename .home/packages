@@ -1,0 +1,32 @@
+aptitude
+arandr
+autoconf automake autopoint autotools-dev libltdl-dev libtool m4
+build-essential
+cmake
+cpufreqd
+curl
+git-gui
+gnome-color-manager
+icc-profiles
+jq
+libpython2.7-dev
+libvirt-daemon
+libvirt-daemon-system
+meld
+mercurial
+mysql-server phpmyadmin
+pinta
+powertop
+python-argcomplete
+qemu-kvm
+tshark
+upx-ucl
+vim-gtk
+virt-manager
+virtualenv
+whois
+wireshark
+xcalib
+xclip
+xubuntu-desktop
+xubuntu-restricted-extras

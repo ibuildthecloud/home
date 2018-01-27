@@ -2,3 +2,9 @@
 
 export LANG=en_US.UTF-8
 ${HOME}/.home/setup/load.sh
+
+for i in ${HOME}/.bashrc.d/*; do
+    if [ -e "$i" ]; then
+        source $i
+    fi
+done
