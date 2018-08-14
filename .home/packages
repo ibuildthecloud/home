@@ -1,24 +1,33 @@
 aptitude
 arandr
 autoconf automake autopoint autotools-dev libltdl-dev libtool m4
+baobab
+bash-completion
 build-essential
 cmake
 cpufreqd
 curl
 git-gui
 gnome-color-manager
+graphviz
 icc-profiles
+iftop
 jq
 libpython2.7-dev
 libvirt-daemon
 libvirt-daemon-system
+lsof
 meld
 mercurial
 mysql-server phpmyadmin
+nmap
+openjdk-8-jdk
 pinta
+pm-utils
 powertop
 python-argcomplete
 qemu-kvm
+rsync
 tshark
 upx-ucl
 vim-gtk

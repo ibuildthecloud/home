@@ -1,4 +1,6 @@
 set nocompatible
+set encoding=utf-8
+set noerrorbells
 filetype on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()

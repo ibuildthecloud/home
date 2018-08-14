@@ -25,6 +25,7 @@
       <property name="&lt;Super&gt;m" type="empty"/>
       <property name="XF86Explorer" type="empty"/>
       <property name="&lt;Super&gt;f" type="empty"/>
+      <property name="&lt;Super&gt;F1" type="empty"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="empty"/>
       <property name="&lt;Super&gt;t" type="empty"/>
       <property name="&lt;Super&gt;r" type="empty"/>
@@ -56,6 +57,8 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;z" type="string" value="xfce4-terminal"/>
       <property name="Print" type="string" value="xfce4-screenshooter"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;p" type="string" value="/home/darren/.local/bin/switch-display.sh"/>
+      <property name="XF86AudioRaiseVolume" type="string" value="amixer set Master 5%+ -q"/>
+      <property name="XF86AudioLowerVolume" type="string" value="amixer set Master 5%- -q"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -113,6 +116,14 @@
       <property name="&lt;Primary&gt;F11" type="empty"/>
       <property name="&lt;Primary&gt;F12" type="empty"/>
       <property name="&lt;Alt&gt;F5" type="empty"/>
+      <property name="&lt;Super&gt;KP_1" type="empty"/>
+      <property name="&lt;Super&gt;Down" type="empty"/>
+      <property name="&lt;Super&gt;KP_3" type="empty"/>
+      <property name="&lt;Super&gt;Left" type="empty"/>
+      <property name="&lt;Super&gt;Right" type="empty"/>
+      <property name="&lt;Super&gt;KP_7" type="empty"/>
+      <property name="&lt;Super&gt;Up" type="empty"/>
+      <property name="&lt;Super&gt;KP_9" type="empty"/>
     </property>
     <property name="custom" type="empty">
       <property name="Up" type="string" value="up_key"/>

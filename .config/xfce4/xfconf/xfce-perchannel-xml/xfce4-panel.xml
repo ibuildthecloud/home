@@ -12,7 +12,6 @@
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
         <value type="int" value="1"/>
-        <value type="int" value="4"/>
         <value type="int" value="6"/>
         <value type="int" value="5"/>
         <value type="int" value="2"/>
@@ -39,34 +38,42 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
         <value type="string" value="task manager"/>
+        <value type="string" value="steam"/>
         <value type="string" value="chrome"/>
         <value type="string" value="ibus-ui-gtk3"/>
+        <value type="string" value="obs"/>
         <value type="string" value="scp-dbus-service.py"/>
         <value type="string" value="chromium-browser"/>
         <value type="string" value="orage"/>
         <value type="string" value="wicd-client.py"/>
         <value type="string" value="vlc"/>
         <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="nxclient.bin"/>
         <value type="string" value="virt-manager"/>
         <value type="string" value="thunar"/>
         <value type="string" value="spotify"/>
         <value type="string" value="toolbox"/>
         <value type="string" value="google-chrome"/>
-        <value type="string" value="pidgin"/>
-        <value type="string" value="google-chrome-stable"/>
+        <value type="string" value="network"/>
         <value type="string" value="x-www-browser"/>
-        <value type="string" value="kerneloops-applet"/>
+        <value type="string" value="google-chrome-stable"/>
+        <value type="string" value="gtk-recordmydesktop"/>
+        <value type="string" value="pidgin"/>
+        <value type="string" value="simplescreenrecorder"/>
         <value type="string" value="indicator-multiload"/>
         <value type="string" value="redshift-gtk"/>
+        <value type="string" value="kerneloops-applet"/>
+        <value type="string" value="slack"/>
         <value type="string" value="vmware-tray"/>
-        <value type="string" value="networkmanager applet"/>
         <value type="string" value="zoom"/>
         <value type="string" value="cloud-backup-ui"/>
-        <value type="string" value="slack"/>
+        <value type="string" value="networkmanager applet"/>
         <value type="string" value="blueman-applet"/>
+        <value type="string" value="déjà dup backup tool"/>
         <value type="string" value="update-notifier"/>
         <value type="string" value="notes"/>
         <value type="string" value="indicator-cpufreq"/>
+        <value type="string" value="kazam"/>
         <value type="string" value="gigolo"/>
         <value type="string" value="remmina"/>
       </property>
@@ -91,6 +98,5 @@
       <property name="workspace-scrolling" type="bool" value="false"/>
     </property>
     <property name="plugin-1" type="string" value="cpugraph"/>
-    <property name="plugin-4" type="string" value="netload"/>
   </property>
 </channel>

@@ -1,5 +1,5 @@
-export GOROOT=~/.local/go
-if [ -z "$GOPATH" ]; then
+if [ -z "$GOPATH" ] || [ "$GOPATH" = "/home/darren/.local/go" ]; then
     export GOPATH=~/.local/gocode
+    export GOROOT=~/.local/go
+    export PATH=${GOPATH}/bin:${GOROOT}/bin:$PATH
 fi
-export PATH=$PATH:${GOROOT}/bin:${GOPATH}/bin:~/.local/gocode/bin

@@ -1,8 +1,8 @@
 delay=2
-region=3
-action=5
+region=1
+action=1
 show_mouse=0
-screenshot_dir=file:/home/darren/Pictures
-app=ristretto
+screenshot_dir=file:/home/darren/Downloads
+app=pinta
 last_user=
 
