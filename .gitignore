@@ -1,0 +1,16 @@
+/*
+!/.bashrc
+!/.bashrc.d
+/.bashrc.d/do
+!/.config
+/.config/*
+!/.config/xfce4
+!/.gitconfig
+!/.gitignore
+!/.home
+!/.vimrc
+!/.xsessionrc 
+
+/.config/xfce4/Verve/
+/.config/xfce4/desktop/
+/.config/xfce4/xfce4-notes.gtkrc.BROOIZ
