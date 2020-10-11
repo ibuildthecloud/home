@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e -x
+
+rm -rf ~/.kube/k3s.yaml ~/.kube/config ~/.config/k3d/k3s-default
+k3d cluster delete -a
+for (( i=1 ; i < ${NUM:-2}; i++ )); do
+    k3d cluster create cluster${i} --wait=false
+done
+k3d cluster create default -p '443:443@loadbalancer' --api-port 6443 \
+    --k3s-server-arg="--kube-controller-manager-arg=kube-api-qps=10000" \
+    --k3s-server-arg="--kube-controller-manager-arg=concurrent-serviceaccount-token-syncs=100"
+
+wait -n
+kubectl --all-namespaces=true get all

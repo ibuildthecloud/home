@@ -1,5 +1,4 @@
 if [ -z "$GOPATH" ] || [ "$GOPATH" = "/home/darren/.local/go" ]; then
-    export GOPATH=~/.local/gocode
     export GOROOT=~/.local/go
-    export PATH=${GOPATH}/bin:${GOROOT}/bin:$PATH
+    export PATH=${HOME}/go/bin:${GOROOT}/bin:$PATH
 fi

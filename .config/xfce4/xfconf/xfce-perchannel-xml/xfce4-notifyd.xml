@@ -7,29 +7,40 @@
   <property name="do-fadeout" type="bool" value="true"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="balena-etcher-electron"/>
       <value type="string" value="Blueman"/>
+      <value type="string" value="CLion"/>
       <value type="string" value="Electron"/>
+      <value type="string" value="evolution"/>
       <value type="string" value="Firefox"/>
       <value type="string" value="Gogland"/>
       <value type="string" value="GoLand"/>
       <value type="string" value="google-chrome"/>
+      <value type="string" value="Hyper"/>
       <value type="string" value="IDEA"/>
       <value type="string" value="jetbrains-toolbox"/>
+      <value type="string" value="jetbrains-toolbox.desktop"/>
       <value type="string" value="nm-applet"/>
       <value type="string" value="notify-send"/>
+      <value type="string" value="org.gnome.baobab"/>
+      <value type="string" value="org.gnome.Evolution"/>
+      <value type="string" value="org.gnome.Evolution-alarm-notify"/>
       <value type="string" value="org.gnome.Nautilus"/>
       <value type="string" value="org.gnome.Software"/>
       <value type="string" value="org.kde.kdenlive"/>
       <value type="string" value="PyCharm"/>
       <value type="string" value="Slack"/>
+      <value type="string" value="Solaar"/>
       <value type="string" value="Spotify"/>
       <value type="string" value="System Config Printer Notification"/>
       <value type="string" value="Thunar"/>
       <value type="string" value="thunar-volman"/>
       <value type="string" value="Transmission"/>
+      <value type="string" value="Xfce volume control"/>
       <value type="string" value="Xfce volume daemon"/>
       <value type="string" value="Xfce4-notifyd settings"/>
       <value type="string" value="xfce4-power-manager"/>
+      <value type="string" value="xfce4-settings-helper"/>
     </property>
   </property>
   <property name="log-level" type="uint" value="0"/>

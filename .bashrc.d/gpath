@@ -8,6 +8,7 @@ gpath()
     OLD_PS1="$PS1"
     PS1="($(basename $(pwd)))$PS1"
     GPATH_BASE=$(pwd)
+    export GO111MODULE=off
     cd $GOPATH_SRC
 }
 
@@ -22,6 +23,7 @@ ungpath()
     PS1="$OLD_PS1"
     GOPATH="$OLD_GOPATH"
     PATH="$OLD_GPATH"
+    unset GO111MODULE
 }
 
 cdg()
@@ -44,7 +46,7 @@ _gpath_lookup()
     #HASH=${HASH:0:8}
     OLD_GOPATH="$GOPATH"
     OLD_GPATH="$PATH"
-    GOPATH="${HOME}/.gpath/${HASH}"
+    export GOPATH="${HOME}/.gpath/${HASH}"
     PATH="$GOPATH/bin:$PATH"
 
     if [ -e .package ]; then

@@ -1,0 +1,2 @@
+export K3S_ARM64_HOST=10.20.3.20
+export K3S_ARM64_HOST_USER=darren

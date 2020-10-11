@@ -8,11 +8,14 @@
       <property name="position" type="string" value="p=2;x=1277;y=1166"/>
       <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="24"/>
+      <property name="size" type="uint" value="22"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
         <value type="int" value="1"/>
+        <value type="int" value="3"/>
+        <value type="int" value="4"/>
         <value type="int" value="6"/>
+        <value type="int" value="8"/>
         <value type="int" value="5"/>
         <value type="int" value="2"/>
       </property>
@@ -23,6 +26,8 @@
       <property name="background-style" type="uint" value="0"/>
       <property name="mode" type="uint" value="0"/>
       <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="leave-opacity" type="uint" value="27"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -31,9 +36,10 @@
       <property name="invert-orientation" type="bool" value="false"/>
     </property>
     <property name="plugin-5" type="string" value="clock">
-      <property name="timezone" type="string" value=""/>
+      <property name="timezone" type="string" value="America/Phoenix"/>
       <property name="digital-format" type="string" value="%I:%M %p"/>
       <property name="mode" type="uint" value="2"/>
+      <property name="tooltip-format" type="string" value=""/>
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
@@ -63,12 +69,16 @@
         <value type="string" value="indicator-multiload"/>
         <value type="string" value="redshift-gtk"/>
         <value type="string" value="kerneloops-applet"/>
+        <value type="string" value="solaar"/>
+        <value type="string" value="multipass-gui"/>
         <value type="string" value="slack"/>
         <value type="string" value="vmware-tray"/>
         <value type="string" value="zoom"/>
         <value type="string" value="cloud-backup-ui"/>
+        <value type="string" value="system-config-printer"/>
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="blueman-applet"/>
+        <value type="string" value="evolution-alarm-notify"/>
         <value type="string" value="déjà dup backup tool"/>
         <value type="string" value="update-notifier"/>
         <value type="string" value="notes"/>
@@ -76,9 +86,24 @@
         <value type="string" value="kazam"/>
         <value type="string" value="gigolo"/>
         <value type="string" value="remmina"/>
+        <value type="string" value="cloud-drive-ui"/>
+        <value type="string" value="veracrypt"/>
       </property>
       <property name="show-frame" type="bool" value="false"/>
       <property name="size-max" type="uint" value="22"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="veracrypt"/>
+        <value type="string" value="teams"/>
+        <value type="string" value="jetbrains-toolbox"/>
+        <value type="string" value="zoom"/>
+        <value type="string" value="multipass-gui"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="slack"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="network"/>
+      </property>
+      <property name="names-hidden" type="array">
+      </property>
     </property>
     <property name="notes" type="empty">
       <property name="global" type="empty">
@@ -98,5 +123,15 @@
       <property name="workspace-scrolling" type="bool" value="false"/>
     </property>
     <property name="plugin-1" type="string" value="cpugraph"/>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-4" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chrome.instance143639;chrome.instance185801;chrome.instance214635;chrome.instance2869826;chrome.instance391637;chrome.instance54477;chrome.instance548;chrome.instance9743;chromium.instance12402;chromium.instance14244;chromium.instance1730;chromium.instance18451;chromium.instance2143;chromium.instance23900;chromium.instance2400;chromium.instance24518;chromium.instance2483;chromium.instance2530;chromium.instance31581;chromium.instance32842;chromium.instance48240;firefox.instance2459;firefox.instance2460;firefox.instance2502133;firefox.instance46458;firefox.instance7077"/>
+    </property>
+    <property name="plugin-8" type="string" value="applicationsmenu">
+      <property name="show-button-title" type="bool" value="false"/>
+    </property>
   </property>
 </channel>

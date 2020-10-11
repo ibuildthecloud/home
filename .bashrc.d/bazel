@@ -1,2 +1,0 @@
-
-source ${HOME}/.bazel/bin/bazel-complete.bash

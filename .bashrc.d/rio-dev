@@ -1,1 +1,1 @@
-export KUBECONFIG_DEV=${HOME}/.kube/config
+export KUBECONFIG_4d5c1_DEV=${HOME}/.rancher/rio/server/cred/kubeconfig.yaml

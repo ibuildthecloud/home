@@ -6,3 +6,5 @@ alias clearsshlocal="ssh-keygen -f "/home/darren/.ssh/known_hosts" -R [localhost
 alias docker1="docker exec -it host1 docker"
 alias docker2="docker exec -it host2 docker"
 alias docker3="docker exec -it host3 docker"
+alias armhost="ssh 147.75.111.150"
+alias rosenv="export DOCKER_TLS_VERIFY=1 DOCKER_HOST=tcp://10.20.8.243:2376"

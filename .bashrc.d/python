@@ -1,6 +1,6 @@
 export PYTHONSTARTUP=~/.local/bin/startup.py
 
-PY27="${HOME}/.virtualenvs/py27/bin/activate"
-if [ -e ${PY27} ]; then
-    VIRTUAL_ENV_DISABLE_PROMPT=true source $PY27
+PY38="${HOME}/.virtualenvs/py38/bin/activate"
+if [ -e ${PY38} ]; then
+    VIRTUAL_ENV_DISABLE_PROMPT=true source $PY38
 fi

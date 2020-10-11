@@ -10,6 +10,9 @@
 !/.home
 !/.vimrc
 !/.xsessionrc 
+!/.local
+/.local/*
+!/.local/bin
 
 /.config/xfce4/Verve/
 /.config/xfce4/desktop/

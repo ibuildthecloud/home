@@ -11,3 +11,9 @@
     hist = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [push]
 	default = simple
+[url "ssh://git@github.com/rancherlabs"]
+	insteadOf = https://github.com/rancherlabs
+[url "ssh://git@github.com/ibuildthecloud/k3fleet"]
+    insteadOf = https://github.com/ibuildcloud/k3fleet
+[url "ssh://git@github.com/ibuildthecloud/k3fleet"]
+    insteadOf = https://github.com/rancher/k3fleet
