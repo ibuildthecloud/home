@@ -17,3 +17,15 @@
 /.config/xfce4/Verve/
 /.config/xfce4/desktop/
 /.config/xfce4/xfce4-notes.gtkrc.BROOIZ
+/.local/bin/doctl
+/.local/bin/helm
+/.local/bin/hub
+/.local/bin/jetbrains-toolbox
+/.local/bin/k3d
+/.local/bin/k9s
+/.local/bin/kubectl
+/.local/bin/ngrok
+/.local/bin/rancher-helm
+/.local/bin/rancher-machine
+/.local/bin/rancher-tiller
+/.local/bin/skaffold

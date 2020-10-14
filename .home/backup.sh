@@ -5,8 +5,8 @@ if [ ! -e /mnt/backup/darren ]; then
 fi
 cd ${HOME}
 apt-mark showmanual > .packages
-if ! diff .packages src/desktop/desktop/packages; then
-    mv .packages src/desktop/desktop/packages
+if ! diff .packages .home/packages; then
+    mv .packages .home/packages
 else
     rm .packages
 fi
