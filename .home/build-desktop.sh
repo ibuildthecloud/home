@@ -13,7 +13,7 @@ echo 'APT::Install-Suggests "false";' >> /etc/apt/apt.conf.d/02norecommends
 echo 'APT::Get::Install-Recommends "false";' >> /etc/apt/apt.conf.d/02norecommends
 echo 'APT::Get::Install-Suggests "false";' >> /etc/apt/apt.conf.d/02norecommends
 echo 'deb http://repository.spotify.com stable non-free' >> /etc/apt/sources.list
-echo 'deb https://download.docker.com/linux/ubuntu eoan stable' >> /etc/apt/sources.list
+echo 'deb https://download.docker.com/linux/ubuntu focal stable' >> /etc/apt/sources.list
 echo 'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian focal contrib' >> /etc/apt/sources.list
 curl -fsSL https://www.virtualbox.org/download/oracle_vbox_2016.asc | apt-key add -
 curl -fsSL https://download.spotify.com/debian/pubkey_0D811D58.gpg | apt-key add -
