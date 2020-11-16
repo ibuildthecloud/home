@@ -1,9 +1,9 @@
 #!/bin/bash
 
-cat | docker build -f - -t dev-shell << EOF
+cat | docker build -f - -t dev-shell . << EOF
 FROM ubuntu
 RUN apt-get update && \
-    apt install -y vim
+    apt install -y vim iptables socat
 VOLUME /var/lib/rancher
 VOLUME /var/lib/docker
 VOLUME /var/lib/kubelet

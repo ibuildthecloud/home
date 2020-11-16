@@ -10,3 +10,5 @@ if [ ! -e ~/.vim/bundle/Vundle.vim ]; then
         git clone https://github.com/gmarik/Vundle.vim.git
     )
 fi
+
+mkdir -p ~/.vim/{_backup,_temp,_undo}

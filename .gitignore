@@ -10,6 +10,7 @@
 !/.home
 !/.vimrc
 !/.xsessionrc 
+!/.Xresources
 !/.local
 /.local/*
 !/.local/bin

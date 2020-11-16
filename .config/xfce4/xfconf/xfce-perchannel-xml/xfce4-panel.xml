@@ -9,19 +9,20 @@
       <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="uint" value="22"/>
+      <property name="length-adjust" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
-        <value type="int" value="1"/>
         <value type="int" value="3"/>
+        <value type="int" value="9"/>
         <value type="int" value="4"/>
         <value type="int" value="6"/>
         <value type="int" value="8"/>
+        <value type="int" value="1"/>
         <value type="int" value="5"/>
         <value type="int" value="2"/>
       </property>
       <property name="span-monitors" type="bool" value="false"/>
       <property name="disable-struts" type="bool" value="true"/>
-      <property name="length-adjust" type="bool" value="true"/>
       <property name="background-alpha" type="uint" value="0"/>
       <property name="background-style" type="uint" value="0"/>
       <property name="mode" type="uint" value="0"/>
@@ -31,11 +32,25 @@
     </property>
   </property>
   <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="notification-plugin"/>
     <property name="plugin-2" type="string" value="actions">
+      <property name="style" type="empty"/>
       <property name="appearance" type="uint" value="1"/>
       <property name="invert-orientation" type="bool" value="false"/>
     </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-4" type="string" value="pulseaudio">
+      <property name="flat-buttons" type="empty"/>
+      <property name="show-handle" type="empty"/>
+      <property name="grouping" type="empty"/>
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chrome.instance143639;chrome.instance185801;chrome.instance214635;chrome.instance2170497;chrome.instance2575;chrome.instance2869826;chrome.instance391637;chrome.instance54477;chrome.instance548;chrome.instance768243;chrome.instance9743;chromium.instance12402;chromium.instance14244;chromium.instance1730;chromium.instance18451;chromium.instance2143;chromium.instance23900;chromium.instance2400;chromium.instance24518;chromium.instance2483;chromium.instance2530;chromium.instance31581;chromium.instance32842;chromium.instance48240;firefox.instance18958;firefox.instance2330;firefox.instance2341125;firefox.instance2343;firefox.instance2376;firefox.instance2459;firefox.instance2460;firefox.instance2502133;firefox.instance2691;firefox.instance3078;firefox.instance46458;firefox.instance7077"/>
+    </property>
     <property name="plugin-5" type="string" value="clock">
+      <property name="expand" type="empty"/>
+      <property name="style" type="empty"/>
       <property name="timezone" type="string" value="America/Phoenix"/>
       <property name="digital-format" type="string" value="%I:%M %p"/>
       <property name="mode" type="uint" value="2"/>
@@ -92,6 +107,10 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="size-max" type="uint" value="22"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="package update indicator"/>
+        <value type="string" value="update-notifier"/>
+        <value type="string" value="vmware-tray"/>
         <value type="string" value="veracrypt"/>
         <value type="string" value="teams"/>
         <value type="string" value="jetbrains-toolbox"/>
@@ -105,6 +124,35 @@
       <property name="names-hidden" type="array">
       </property>
     </property>
+    <property name="plugin-14" type="empty"/>
+    <property name="plugin-13" type="empty"/>
+    <property name="plugin-7" type="string" value="pager">
+      <property name="show-frame" type="empty"/>
+      <property name="square-icons" type="empty"/>
+      <property name="size-max" type="empty"/>
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="true"/>
+      <property name="workspace-scrolling" type="bool" value="false"/>
+    </property>
+    <property name="plugin-15" type="empty">
+      <property name="menu-is-primary" type="empty"/>
+      <property name="square-icons" type="empty"/>
+      <property name="icon-size" type="empty"/>
+      <property name="symbolic-icons" type="empty"/>
+    </property>
+    <property name="plugin-8" type="string" value="applicationsmenu">
+      <property name="show-button-title" type="bool" value="false"/>
+    </property>
+    <property name="plugin-9" type="string" value="cpugraph">
+      <property name="style" type="empty"/>
+    </property>
+    <property name="plugin-10" type="empty">
+      <property name="show-frame" type="empty"/>
+      <property name="digital-format" type="empty"/>
+    </property>
+    <property name="plugin-11" type="empty">
+      <property name="style" type="empty"/>
+    </property>
     <property name="notes" type="empty">
       <property name="global" type="empty">
         <property name="skip-taskbar-hint" type="bool" value="false"/>
@@ -116,22 +164,6 @@
         <property name="width" type="int" value="270"/>
         <property name="height" type="int" value="337"/>
       </property>
-    </property>
-    <property name="plugin-7" type="string" value="pager">
-      <property name="rows" type="uint" value="1"/>
-      <property name="miniature-view" type="bool" value="true"/>
-      <property name="workspace-scrolling" type="bool" value="false"/>
-    </property>
-    <property name="plugin-1" type="string" value="cpugraph"/>
-    <property name="plugin-3" type="string" value="separator">
-      <property name="style" type="uint" value="0"/>
-    </property>
-    <property name="plugin-4" type="string" value="pulseaudio">
-      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chrome.instance143639;chrome.instance185801;chrome.instance214635;chrome.instance2869826;chrome.instance391637;chrome.instance54477;chrome.instance548;chrome.instance9743;chromium.instance12402;chromium.instance14244;chromium.instance1730;chromium.instance18451;chromium.instance2143;chromium.instance23900;chromium.instance2400;chromium.instance24518;chromium.instance2483;chromium.instance2530;chromium.instance31581;chromium.instance32842;chromium.instance48240;firefox.instance2459;firefox.instance2460;firefox.instance2502133;firefox.instance46458;firefox.instance7077"/>
-    </property>
-    <property name="plugin-8" type="string" value="applicationsmenu">
-      <property name="show-button-title" type="bool" value="false"/>
     </property>
   </property>
 </channel>
