@@ -1,0 +1,14 @@
+#!/bin/bash
+if ! grep 'allow br0' /etc/qemu/bridge.conf; then
+    mkdir -p /etc/qemu
+    echo "allow br0" >> /etc/qemu/bridge.conf
+fi
+
+chmod +s /usr/lib/qemu/qemu-bridge-helper
+
+ip link add dev br0 type bridge
+ip link set dev br0 up
+ip addr add dev br0 192.168.200.1/24
+iptables -t nat -A POSTROUTING -s 192.168.200.0/16 \! -o br0 -j MASQUERADE
+iptables -P FORWARD ACCEPT
+dnsmasq -i br0 -z -d --server=8.8.8.8 --dhcp-range=192.168.200.50,192.168.200.150,1200h

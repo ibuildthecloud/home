@@ -12,8 +12,8 @@
       <property name="length-adjust" type="bool" value="true"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="7"/>
+        <value type="int" value="10"/>
         <value type="int" value="3"/>
-        <value type="int" value="9"/>
         <value type="int" value="4"/>
         <value type="int" value="6"/>
         <value type="int" value="8"/>
@@ -46,7 +46,7 @@
       <property name="show-handle" type="empty"/>
       <property name="grouping" type="empty"/>
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chrome.instance143639;chrome.instance185801;chrome.instance214635;chrome.instance2170497;chrome.instance2575;chrome.instance2869826;chrome.instance391637;chrome.instance54477;chrome.instance548;chrome.instance768243;chrome.instance9743;chromium.instance12402;chromium.instance14244;chromium.instance1730;chromium.instance18451;chromium.instance2143;chromium.instance23900;chromium.instance2400;chromium.instance24518;chromium.instance2483;chromium.instance2530;chromium.instance31581;chromium.instance32842;chromium.instance48240;firefox.instance18958;firefox.instance2330;firefox.instance2341125;firefox.instance2343;firefox.instance2376;firefox.instance2459;firefox.instance2460;firefox.instance2502133;firefox.instance2691;firefox.instance3078;firefox.instance46458;firefox.instance7077"/>
+      <property name="mpris-players" type="string" value="chrome.instance13710;chrome.instance143639;chrome.instance185801;chrome.instance214635;chrome.instance2170497;chrome.instance24132;chrome.instance2575;chrome.instance2869826;chrome.instance391637;chrome.instance54477;chrome.instance548;chrome.instance768243;chrome.instance9743;chromium.instance12293;chromium.instance12402;chromium.instance13954;chromium.instance14244;chromium.instance14585;chromium.instance1618361;chromium.instance1730;chromium.instance1782;chromium.instance18381;chromium.instance18451;chromium.instance1906;chromium.instance2022;chromium.instance2143;chromium.instance23900;chromium.instance2400;chromium.instance24518;chromium.instance2483;chromium.instance25182;chromium.instance2530;chromium.instance2666;chromium.instance28320;chromium.instance31581;chromium.instance3240640;chromium.instance32842;chromium.instance3516935;chromium.instance3919;chromium.instance430916;chromium.instance431237;chromium.instance48240;chromium.instance4846;chromium.instance5325;chromium.instance6145;chromium.instance6814;chromium.instance7545;chromium.instance8355;chromium.instance9975;chromium.instance99870;firefox.instance10482;firefox.instance10565;firefox.instance10611;firefox.instance11489;firefox.instance11496;firefox.instance12117;firefox.instance12838;firefox.instance15486;firefox.instance16846;firefox.instance18958;firefox.instance19148;firefox.instance19381;firefox.instance1957;firefox.instance1997062;firefox.instance2099;firefox.instance2241682;firefox.instance22890;firefox.instance2330;firefox.instance2341125;firefox.instance2343;firefox.instance2376;firefox.instance2459;firefox.instance2460;firefox.instance2502133;firefox.instance265602;firefox.instance2689;firefox.instance2691;firefox.instance2711;firefox.instance29908;firefox.instance29944;firefox.instance3055;firefox.instance3078;firefox.instance3160;firefox.instance3195;firefox.instance3341;firefox.instance3409;firefox.instance37810;firefox.instance3982;firefox.instance4467;firefox.instance46458;firefox.instance4801;firefox.instance52108;firefox.instance5300;firefox.instance5523;firefox.instance5890;firefox.instance6869;firefox.instance705094;firefox.instance7064;firefox.instance7077;firefox.instance7592;firefox.instance840059;firefox.instance8447;firefox.instance8832"/>
     </property>
     <property name="plugin-5" type="string" value="clock">
       <property name="expand" type="empty"/>
@@ -107,6 +107,15 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="size-max" type="uint" value="22"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="telegramdesktop"/>
+        <value type="string" value="solaar"/>
+        <value type="string" value="system-config-printer"/>
+        <value type="string" value="1password"/>
+        <value type="string" value="toolbox"/>
+        <value type="string" value="kontena-lens"/>
+        <value type="string" value="ibus panel"/>
+        <value type="string" value="scp-dbus-service.py"/>
+        <value type="string" value="ibus-ui-gtk3"/>
         <value type="string" value="blueberry-tray.py"/>
         <value type="string" value="package update indicator"/>
         <value type="string" value="update-notifier"/>
@@ -123,12 +132,31 @@
       </property>
       <property name="names-hidden" type="array">
       </property>
+      <property name="known-items" type="array">
+        <value type="string" value="chrome_status_icon_1"/>
+        <value type="string" value="zoom"/>
+        <value type="string" value="Rocket.Chat1"/>
+        <value type="string" value="toolbox"/>
+        <value type="string" value="Microsoft Teams - Preview1"/>
+        <value type="string" value="Slack1"/>
+        <value type="string" value="org.guido-berhoerster.code.package-update-indicator"/>
+        <value type="string" value="nm-applet"/>
+      </property>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="scp-dbus-service.py"/>
+        <value type="string" value="ibus panel"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="ibus-ui-gtk3"/>
+      </property>
     </property>
     <property name="plugin-14" type="empty"/>
     <property name="plugin-13" type="empty"/>
     <property name="plugin-7" type="string" value="pager">
       <property name="show-frame" type="empty"/>
       <property name="square-icons" type="empty"/>
+      <property name="icon-size" type="empty"/>
+      <property name="symbolic-icons" type="empty"/>
       <property name="size-max" type="empty"/>
       <property name="rows" type="uint" value="1"/>
       <property name="miniature-view" type="bool" value="true"/>
@@ -143,10 +171,10 @@
     <property name="plugin-8" type="string" value="applicationsmenu">
       <property name="show-button-title" type="bool" value="false"/>
     </property>
-    <property name="plugin-9" type="string" value="cpugraph">
+    <property name="plugin-9" type="empty">
       <property name="style" type="empty"/>
     </property>
-    <property name="plugin-10" type="empty">
+    <property name="plugin-10" type="string" value="cpugraph">
       <property name="show-frame" type="empty"/>
       <property name="digital-format" type="empty"/>
     </property>

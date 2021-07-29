@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -z "${IMAGE}" ]; then
+    docker run -it --pull always --privileged -p 8080:80 -p 8443:443 rancher/rancher:master-head --no-cacerts "$@"
+else
+    docker run -it --privileged -p 8080:80 -p 8443:443 ${IMAGE} --no-cacerts "$@"
+fi

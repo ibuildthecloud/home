@@ -3,7 +3,7 @@
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
     <property name="ThemeName" type="string" value="Adwaita-dark"/>
-    <property name="IconThemeName" type="string" value="Humanity-Dark"/>
+    <property name="IconThemeName" type="string" value="Humanity"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
@@ -17,8 +17,8 @@
   <property name="Xft" type="empty">
     <property name="DPI" type="int" value="96"/>
     <property name="Antialias" type="int" value="1"/>
-    <property name="Hinting" type="empty"/>
-    <property name="HintStyle" type="string" value="hintslight"/>
+    <property name="Hinting" type="int" value="1"/>
+    <property name="HintStyle" type="string" value="hintfull"/>
     <property name="RGBA" type="string" value="rgb"/>
     <property name="Lcdfilter" type="empty"/>
   </property>

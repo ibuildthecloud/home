@@ -9,6 +9,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'ziglang/zig.vim'
+Plugin 'jjo/vim-cue'
 
 call vundle#end()
 filetype plugin indent on 
