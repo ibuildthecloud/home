@@ -1,8 +1,5 @@
 #!/bin/bash
 set -e -x
-if [ ! -e /mnt/backup/darren ]; then
-    exit 0
-fi
 cd ${HOME}
 if command -v apt-mark; then
     apt-mark showmanual > .packages
@@ -23,5 +20,8 @@ if command -v zypper; then
 fi
 if ! diff .stignore .backup.stignore; then
     cp .stignore .backup.stignore
+fi
+if [ ! -e /mnt/backup/darren ]; then
+    exit 0
 fi
 rsync -av --progress --delete --delete-excluded --exclude-from .stignore . /mnt/backup/darren

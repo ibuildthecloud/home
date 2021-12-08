@@ -13,6 +13,7 @@
       <value type="string" value="Electron"/>
       <value type="string" value="evolution"/>
       <value type="string" value="Firefox"/>
+      <value type="string" value="FortiClient"/>
       <value type="string" value="Gogland"/>
       <value type="string" value="GoLand"/>
       <value type="string" value="google-chrome"/>

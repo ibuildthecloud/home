@@ -1,6 +1,6 @@
-delay=0
-region=3
-action=1
+delay=2
+region=1
+action=4
 show_mouse=0
 screenshot_dir=file:/home/darren/Downloads
 app=pinta

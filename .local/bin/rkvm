@@ -2,8 +2,15 @@
 set -e -x
 
 if [ ! -e disk.img ]; then
-    #fallocate -l 40g disk.img
-    qemu-img create -f qcow2 disk.img 40g
+    if [ -e ../disk.img ]; then
+        cp ../disk.img .
+    else
+        qemu-img create -f qcow2 disk.img 40g
+    fi
+fi
+
+if [ ! -e user-data ] && [ -e ../user-data ]; then
+    cp ../user-data .
 fi
 
 touch meta-data
@@ -12,8 +19,18 @@ rm -f seed.iso
 genisoimage -output seed.iso -volid cidata -joliet -rock user-data meta-data
 
 netid=${RANDOM:0:2}
+iso=${1:-output.iso}
+if [ -e "$iso" ]; then
+    iso="-drive if=ide,media=cdrom,file=${iso}"
+else
+    iso=""
+fi
 
-qemu-system-x86_64 \
+if [ -e ${HOME}/src/os2/scripts/qemu-wrapper ]; then
+    WRAPPER=${HOME}/src/os2/scripts/qemu-wrapper
+fi
+
+$WRAPPER qemu-system-x86_64 \
     -enable-kvm \
     -m ${MEMORY:=4096} \
     -netdev bridge,id=n1 -device virtio-net,netdev=n1,mac=52:a4:00:12:78:${netid} \
@@ -26,6 +43,5 @@ qemu-system-x86_64 \
     -device virtio-serial \
     -device virtserialport,chardev=qga0,name=org.qemu.guest_agent.0 \
     -drive if=virtio,media=disk,file=disk.img \
-    -drive if=ide,media=cdrom,file=${1:-output.iso} \
+    $iso \
     -drive if=ide,media=cdrom,file=seed.iso
-

@@ -1,9 +1,8 @@
 #!/bin/bash
 set -x
 
-MEM=${MEM:-8}
-KEY=$(doctl compute ssh-key list | grep -i darren@rancher.com | awk '{print $1}')
-ID=$(doctl compute droplet create --image ubuntu-20-04-x64 --size ${MEM}gb --region sfo2 --ssh-keys 497506 --format ID --no-header darren-${RANDOM})
+KEY=$(doctl compute ssh-key list | grep -i darren.shepherd@suse.com | awk '{print $1}')
+ID=$(doctl compute droplet create --image ubuntu-20-04-x64 --size s-2vcpu-4gb-amd --region sfo3 --ssh-keys $KEY --format ID --no-header darren-${RANDOM})
 
 while true; do
     IP=$(doctl compute droplet get --no-header --format PublicIPv4 $ID)

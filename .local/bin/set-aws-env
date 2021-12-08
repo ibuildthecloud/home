@@ -1,0 +1,3 @@
+export AWS_ACCESS_KEY_ID="$(echo $(grep ^aws_access_key_id ~/.aws/credentials | cut -f2 -d=))"
+export AWS_SECRET_ACCESS_KEY="$(echo $(grep ^aws_secret_access_key ~/.aws/credentials | cut -f2 -d=))"
+export AWS_DEFAULT_REGION="us-west-2"

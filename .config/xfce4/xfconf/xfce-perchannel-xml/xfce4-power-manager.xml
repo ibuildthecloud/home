@@ -33,6 +33,24 @@
     <property name="blank-on-battery" type="int" value="8"/>
     <property name="inactivity-sleep-mode-on-ac" type="empty"/>
     <property name="inactivity-sleep-mode-on-battery" type="uint" value="1"/>
+    <property name="brightness-level-on-ac" type="empty"/>
+    <property name="brightness-level-on-battery" type="empty"/>
+    <property name="brightness-on-ac" type="empty"/>
+    <property name="brightness-on-battery" type="uint" value="9"/>
+    <property name="critical-power-action" type="empty"/>
+    <property name="critical-power-level" type="empty"/>
+    <property name="general-notification" type="bool" value="true"/>
+    <property name="hibernate-button-action" type="empty"/>
+    <property name="inactivity-on-ac" type="empty"/>
+    <property name="inactivity-on-battery" type="empty"/>
+    <property name="inactivity-sleep-mode" type="empty"/>
+    <property name="lid-action-on-ac" type="uint" value="1"/>
+    <property name="lid-action-on-battery" type="uint" value="1"/>
+    <property name="network-manager-sleep" type="empty"/>
+    <property name="sleep-button-action" type="empty"/>
+    <property name="spin-down-hdd" type="empty"/>
+    <property name="spin-down-on-ac-timeout" type="empty"/>
+    <property name="spin-down-on-battery-timeout" type="empty"/>
     <property name="brightness-switch-restore-on-exit" type="int" value="1"/>
     <property name="brightness-switch" type="int" value="0"/>
     <property name="show-tray-icon" type="bool" value="true"/>
