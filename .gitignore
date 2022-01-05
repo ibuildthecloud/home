@@ -30,6 +30,7 @@
 /.local/bin/docker-compose
 /.local/bin/doctl
 /.local/bin/dolly
+/.local/bin/eksctl
 /.local/bin/finalizers
 /.local/bin/gh
 /.local/bin/goland
