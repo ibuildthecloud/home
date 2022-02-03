@@ -16,6 +16,8 @@ echo 'deb http://repository.spotify.com stable non-free' >> /etc/apt/sources.lis
 echo 'deb https://download.docker.com/linux/ubuntu focal stable' >> /etc/apt/sources.list
 echo 'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian focal contrib' >> /etc/apt/sources.list
 echo "deb https://ngrok-agent.s3.amazonaws.com buster main" >> /etc/apt/sources.list
+echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" >> /etc/apt/sources.list
+curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 curl -fsSL https://www.virtualbox.org/download/oracle_vbox_2016.asc | apt-key add -
 curl -fsSL https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add -
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
