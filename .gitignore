@@ -14,6 +14,9 @@
 !/.local
 /.local/*
 !/.local/bin
+!/src
+/src/*
+!/src/.stignore
 
 /.config/xfce4/Verve/
 /.config/xfce4/desktop/
