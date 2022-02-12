@@ -1,4 +1,5 @@
 /*
+!/.backup.stignore
 !/.bashrc
 !/.bashrc.d
 /.bashrc.d/do
@@ -9,6 +10,7 @@
 !/.gitignore
 !/.home
 !/.vimrc
+!/.stignore
 !/.xsessionrc 
 !/.Xresources
 !/.local
