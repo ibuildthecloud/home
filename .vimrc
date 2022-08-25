@@ -11,9 +11,14 @@ Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ziglang/zig.vim'
 Plugin 'jjo/vim-cue'
+Plugin 'jasontbradshaw/pigeon.vim'
 
 call vundle#end()
 filetype plugin indent on 
+
+" Make cue detect work, no clue why it doesn't work by default
+au BufRead,BufNewFile *.cue setfiletype cue
+au BufRead,BufNewFile Acornfile setfiletype cue
 
 " Random settings
 autocmd FileType javascript setlocal sw=2 ts=2

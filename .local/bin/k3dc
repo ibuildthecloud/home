@@ -2,16 +2,16 @@
 set -e -x
 
 #IMAGE=rancher/k3s:${VERSION:-latest}
-IMAGE=rancher/k3s:${VERSION:-v1.21.5-k3s2}
-docker pull $IMAGE
+IMAGE=rancher/k3s:${VERSION:-v1.23.8-k3s1}
+if [ -n "$IMAGE" ]; then
+    docker pull $IMAGE
+fi
 rm -rf ~/.kube/k3s.yaml ~/.kube/config ~/.config/k3d/k3s-default
 k3d cluster delete -a
 for (( i=1 ; i < ${NUM:-1}; i++ )); do
-    k3d cluster create cluster${i} -i ${IMAGE} --wait=false
+    k3d cluster create cluster${i} -i "${IMAGE}" --wait=false
 done
-k3d cluster create default -i ${IMAGE} -p '443:443@loadbalancer' --api-port 6443 \
-    --k3s-server-arg="--kube-controller-manager-arg=kube-api-qps=10000" \
-    --k3s-server-arg="--kube-controller-manager-arg=concurrent-serviceaccount-token-syncs=100"
+k3d cluster create default -i "${IMAGE}"  -p '443:443@loadbalancer' -p '80:80@loadbalancer' --api-port 6443
 
 wait -n
 kubectl --all-namespaces=true get all
