@@ -1,28 +1,30 @@
 " Plugins
 set nocompatible
 set encoding=utf-8
-filetype plugin on
-syntax on
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'acorn-io/acorn.vim'
 Plugin 'ziglang/zig.vim'
-Plugin 'jjo/vim-cue'
-Plugin 'jasontbradshaw/pigeon.vim'
 
 call vundle#end()
-filetype plugin indent on 
 
-" Make cue detect work, no clue why it doesn't work by default
-au BufRead,BufNewFile *.cue setfiletype cue
-au BufRead,BufNewFile Acornfile setfiletype cue
+filetype plugin indent on
+syntax on
+
+au BufRead,BufNewFile *.acorn set filetype=acorn
+au BufRead,BufNewFile *.aml set filetype=acorn
+au BufRead,BufNewFile Acornfile set filetype=acorn
+
 
 " Random settings
 autocmd FileType javascript setlocal sw=2 ts=2
 autocmd FileType yaml setlocal sw=2 ts=2
+autocmd FileType acorn setlocal sw=2 ts=2 noexpandtab
 
 highlight Comment ctermfg=darkcyan
 highlight Search term=reverse  ctermbg=4 ctermfg=3
@@ -30,6 +32,10 @@ highlight Search term=reverse  ctermbg=4 ctermfg=3
 let g:go_fmt_command = "goimports"
 "let g:go_def_mode='gopls'
 "let g:go_info_mode='gopls'
+
+
+let g:acorn_fmt_on_save=1
+let g:acorn_command = "aml"
 
 map <C-;> <C-w>=
 map <C-j> <C-w><Down><C-w>_

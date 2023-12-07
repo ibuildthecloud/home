@@ -2,7 +2,7 @@
 set -e -x
 
 #IMAGE=rancher/k3s:${VERSION:-latest}
-IMAGE=rancher/k3s:${VERSION:-v1.23.8-k3s1}
+IMAGE=rancher/k3s:${VERSION:-v1.25.0-k3s1}
 if [ -n "$IMAGE" ]; then
     docker pull $IMAGE
 fi

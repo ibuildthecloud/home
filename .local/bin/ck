@@ -1,0 +1,3 @@
+#!/bin/bash
+
+acorn -j crap kube --region=aws-us-east-2 "$@"

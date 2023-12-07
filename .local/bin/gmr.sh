@@ -2,5 +2,5 @@
 set -x -e
 for i
 do
-    go mod edit -replace=github.com/rancher/${i}=../${i}
+    go mod edit -replace=github.com/acorn-io/${i}=../${i}
 done

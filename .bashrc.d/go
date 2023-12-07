@@ -1,4 +1,1 @@
-if [ -z "$GOPATH" ] || [ "$GOPATH" = "/home/darren/.local/go" ]; then
-    export GOROOT=~/.local/go
-    export PATH=${HOME}/go/bin:${GOROOT}/bin:$PATH
-fi
+export PATH="$(go env GOPATH)/bin:$PATH"

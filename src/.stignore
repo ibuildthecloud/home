@@ -1,3 +1,5 @@
 oss
 */bin
 */dist
+*/installer_files
+text-generation-webui/models

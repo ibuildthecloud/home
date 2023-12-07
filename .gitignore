@@ -26,6 +26,7 @@
 /.local/bin/bazel
 /.local/bin/civo
 /.local/bin/clion
+/.local/bin/clion1
 /.local/bin/clusterawsadm
 /.local/bin/clusterctl
 /.local/bin/crictl

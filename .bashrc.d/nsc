@@ -1,0 +1,2 @@
+export NS_ROOT="/home/darren/.ns"
+export PATH="$NS_ROOT/bin:$PATH"

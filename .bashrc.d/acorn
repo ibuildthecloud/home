@@ -1,0 +1,2 @@
+source <(acorn completion bash)
+alias acron=acorn

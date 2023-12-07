@@ -16,7 +16,6 @@
         <value type="int" value="3"/>
         <value type="int" value="4"/>
         <value type="int" value="6"/>
-        <value type="int" value="9"/>
         <value type="int" value="8"/>
         <value type="int" value="1"/>
         <value type="int" value="5"/>
@@ -47,7 +46,7 @@
       <property name="show-handle" type="empty"/>
       <property name="grouping" type="empty"/>
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chrome.instance13710;chrome.instance143639;chrome.instance185801;chrome.instance214635;chrome.instance2170497;chrome.instance24132;chrome.instance2575;chrome.instance2869826;chrome.instance391637;chrome.instance54477;chrome.instance548;chrome.instance768243;chrome.instance9743;chromium.instance114328;chromium.instance12293;chromium.instance12402;chromium.instance125300;chromium.instance13954;chromium.instance14244;chromium.instance14584;chromium.instance14585;chromium.instance16490;chromium.instance1730;chromium.instance1835707;chromium.instance18381;chromium.instance18451;chromium.instance2036416;chromium.instance2143;chromium.instance23900;chromium.instance2400;chromium.instance24518;chromium.instance2483;chromium.instance25182;chromium.instance2530;chromium.instance2666;chromium.instance28320;chromium.instance2914602;chromium.instance31581;chromium.instance3170;chromium.instance3240640;chromium.instance32842;chromium.instance3516935;chromium.instance3616;chromium.instance3919;chromium.instance430916;chromium.instance48240;chromium.instance4846;chromium.instance5004;chromium.instance59956;chromium.instance6145;chromium.instance6814;chromium.instance7069;chromium.instance7545;chromium.instance8012;chromium.instance8355;chromium.instance8702;chromium.instance9975;firefox.instance1029133;firefox.instance10453;firefox.instance10565;firefox.instance11489;firefox.instance11496;firefox.instance12117;firefox.instance12223;firefox.instance146213;firefox.instance1489602;firefox.instance1515660;firefox.instance15486;firefox.instance16846;firefox.instance1742354;firefox.instance18958;firefox.instance19148;firefox.instance1918328;firefox.instance19381;firefox.instance1997062;firefox.instance20371;firefox.instance2183698;firefox.instance2205896;firefox.instance2241682;firefox.instance22890;firefox.instance2330;firefox.instance2341125;firefox.instance2343;firefox.instance2376;firefox.instance2459;firefox.instance2460;firefox.instance2502133;firefox.instance2689;firefox.instance2691;firefox.instance2711;firefox.instance29944;firefox.instance3055;firefox.instance3078;firefox.instance3160;firefox.instance3195;firefox.instance3312175;firefox.instance3409;firefox.instance36169;firefox.instance3874;firefox.instance4467;firefox.instance448228;firefox.instance46458;firefox.instance5300;firefox.instance5356;firefox.instance5890;firefox.instance6586;firefox.instance6869;firefox.instance7064;firefox.instance7077;firefox.instance7518;firefox.instance7592;firefox.instance8961;firefox.instance977237;pragha"/>
+      <property name="mpris-players" type="string" value="chrome.instance13710;chrome.instance143639;chrome.instance185801;chrome.instance214635;chrome.instance2170497;chrome.instance24132;chrome.instance2575;chrome.instance2869826;chrome.instance391637;chrome.instance54477;chrome.instance548;chrome.instance768243;chrome.instance9743;chromium.instance1007257;chromium.instance110511;chromium.instance1125028;chromium.instance114328;chromium.instance115462;chromium.instance12293;chromium.instance12402;chromium.instance125300;chromium.instance13954;chromium.instance14244;chromium.instance14584;chromium.instance14585;chromium.instance152509;chromium.instance1583;chromium.instance161872;chromium.instance16490;chromium.instance1730;chromium.instance17600;chromium.instance1835707;chromium.instance18381;chromium.instance18451;chromium.instance1853;chromium.instance192325;chromium.instance2006;chromium.instance2036416;chromium.instance2068;chromium.instance2084;chromium.instance2143;chromium.instance2199;chromium.instance2271;chromium.instance2315;chromium.instance23900;chromium.instance2400;chromium.instance2446;chromium.instance24518;chromium.instance2483;chromium.instance25182;chromium.instance2530;chromium.instance2666;chromium.instance28320;chromium.instance2857596;chromium.instance2914602;chromium.instance31581;chromium.instance3170;chromium.instance3240640;chromium.instance32842;chromium.instance344298;chromium.instance3516935;chromium.instance3560;chromium.instance3616;chromium.instance37581;chromium.instance3919;chromium.instance4117;chromium.instance4227;chromium.instance430916;chromium.instance479636;chromium.instance48240;chromium.instance4846;chromium.instance4951;chromium.instance5004;chromium.instance532778;chromium.instance59956;chromium.instance6145;chromium.instance6814;chromium.instance7069;chromium.instance7368;chromium.instance744897;chromium.instance7545;chromium.instance7711;chromium.instance8012;chromium.instance8355;chromium.instance8541;chromium.instance86341;chromium.instance8702;chromium.instance8735;chromium.instance8833;chromium.instance884744;chromium.instance9975;edge.instance1120959;edge.instance27769;firefox.instance1029133;firefox.instance10453;firefox.instance10565;firefox.instance11244;firefox.instance11248;firefox.instance112721;firefox.instance11489;firefox.instance11496;firefox.instance115994;firefox.instance12112;firefox.instance12117;firefox.instance12223;firefox.instance12508;firefox.instance12732;firefox.instance12969;firefox.instance1354193;firefox.instance14492;firefox.instance14619;firefox.instance146213;firefox.instance146372;firefox.instance1489602;firefox.instance1513072;firefox.instance1515660;firefox.instance15486;firefox.instance16099;firefox.instance16819;firefox.instance16846;firefox.instance1742354;firefox.instance18958;firefox.instance1908908;firefox.instance19148;firefox.instance1918328;firefox.instance19327;firefox.instance19381;firefox.instance1997062;firefox.instance20371;firefox.instance2141;firefox.instance2183698;firefox.instance2205896;firefox.instance2241682;firefox.instance22890;firefox.instance2330;firefox.instance2341125;firefox.instance2343;firefox.instance2363460;firefox.instance2376;firefox.instance2436;firefox.instance2459;firefox.instance2460;firefox.instance2502133;firefox.instance25589;firefox.instance25782;firefox.instance25834;firefox.instance25960;firefox.instance263039;firefox.instance26436;firefox.instance2678;firefox.instance2689;firefox.instance2691;firefox.instance2711;firefox.instance27302;firefox.instance27929;firefox.instance29944;firefox.instance3055;firefox.instance3078;firefox.instance3160;firefox.instance3195;firefox.instance33002;firefox.instance3312175;firefox.instance332742;firefox.instance3409;firefox.instance3533;firefox.instance36169;firefox.instance368319;firefox.instance3874;firefox.instance40523;firefox.instance4117;firefox.instance4467;firefox.instance448228;firefox.instance45056;firefox.instance46458;firefox.instance4776;firefox.instance490915;firefox.instance4944;firefox.instance5033;firefox.instance5274;firefox.instance5300;firefox.instance5356;firefox.instance5430;firefox.instance5454;firefox.instance5487;firefox.instance557801;firefox.instance5839;firefox.instance5890;firefox.instance5940;firefox.instance6020;firefox.instance61973;firefox.instance6322;firefox.instance6372;firefox.instance64356;firefox.instance6562;firefox.instance6586;firefox.instance6698;firefox.instance6715;firefox.instance6869;firefox.instance69329;firefox.instance70249;firefox.instance7064;firefox.instance7077;firefox.instance7290;firefox.instance7424;firefox.instance7518;firefox.instance7592;firefox.instance791857;firefox.instance80245;firefox.instance8154;firefox.instance8174;firefox.instance8202;firefox.instance8454;firefox.instance8548;firefox.instance8670;firefox.instance892720;firefox.instance8961;firefox.instance91906;firefox.instance9708;firefox.instance977237;firefox.instance9866;firefox.instance9880;pragha;spotify"/>
     </property>
     <property name="plugin-5" type="string" value="clock">
       <property name="expand" type="empty"/>
@@ -108,6 +107,16 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="size-max" type="uint" value="22"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="1password"/>
+        <value type="string" value="join?action=join&amp;confno=6505216902&amp;confid=dxrpzd1vvelexzzmn2jmzdc0odc3zdqyyzrizmuyzjllztg3mjgwyzezjnvzcz1owvjat0rhemnmsy1wr0lqekdinmtkne02bgvozwvhlxbqnlyta2ppctbwbmtranb6aw4yt19hd2w0bgdnzex0ns1pzdduburabefpy1lfti5saulzuhjlzzz1z2s0ovhujnrpzd1hnjc1ody2mtbmyzu0nzc0otljn2fkmddhnjlmzty1yq%3d%3d&amp;browser=firefox"/>
+        <value type="string" value="curseforge"/>
+        <value type="string" value="join?action=join&amp;confno=96742025019&amp;pwd=eu5dtm1ymjlot2zoewpjmlfoout0zz09&amp;confid=dxrpzd1vvelexzi5mje5zte5ntdintq1ogjiotmxmjyyotdhnthkntlijnvzcz1ftvr1nem0skhnqzfvymfgb2packjowedzn0x5skv3ze1hz3pzb0xrqut0x19zqkjwwlbnmk1awkn3oviym2juthparmnodezicnjqm2lnadbrlnzsm0vuv0hyvejlcxdcb3kmdglkpwe2nzu4njyxmgzjntq3nzq5owm3ywqwn2e2owzlnjvh&amp;browser=firefox"/>
+        <value type="string" value="join?action=join&amp;confno=6505216902&amp;confid=dxrpzd1vvelexzflmjbkndg3zwi2otrhodhhodbjytvjzmzhntq1mwqxjnvzcz02bfe1ltv6rhexoxuzvnnjm0jrb2tvtefsdznpvkznz1nmmkl6zvplz1djm0fjtk1geuhvajdfu3y1bg1vz05calphmmffa0rzajvsnufhds5asmhcmvrknu42twfqnjbrjnrpzd1hnjc1ody2mtbmyzu0nzc0otljn2fkmddhnjlmzty1yq%3d%3d&amp;browser=firefox"/>
+        <value type="string" value="remmina"/>
+        <value type="string" value="system-config-printer"/>
+        <value type="string" value="javaembeddedframe"/>
+        <value type="string" value="rancher-desktop"/>
+        <value type="string" value="steam"/>
         <value type="string" value="task manager"/>
         <value type="string" value="ozone x11"/>
         <value type="string" value="fortitray"/>
@@ -135,23 +144,30 @@
       <property name="names-hidden" type="array">
       </property>
       <property name="known-items" type="array">
-        <value type="string" value="chrome_status_icon_1"/>
+        <value type="string" value="tao application"/>
         <value type="string" value="zoom"/>
-        <value type="string" value="Rocket.Chat1"/>
-        <value type="string" value="toolbox"/>
+        <value type="string" value="software-update-available"/>
+        <value type="string" value="1Password1"/>
         <value type="string" value="Microsoft Teams - Preview1"/>
+        <value type="string" value="zoom "/>
+        <value type="string" value="chrome_status_icon_1"/>
+        <value type="string" value="remmina-icon"/>
+        <value type="string" value="toolbox"/>
         <value type="string" value="Slack1"/>
-        <value type="string" value="org.guido-berhoerster.code.package-update-indicator"/>
         <value type="string" value="nm-applet"/>
       </property>
       <property name="known-legacy-items" type="array">
-        <value type="string" value="pragha music player"/>
-        <value type="string" value="scp-dbus-service.py"/>
+        <value type="string" value="vmware-tray"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="javaembeddedframe"/>
         <value type="string" value="ibus panel"/>
-        <value type="string" value="blueberry-tray.py"/>
         <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="ibus-ui-gtk3"/>
       </property>
+      <property name="hidden-items" type="array">
+      </property>
+      <property name="hidden-legacy-items" type="array">
+      </property>
+      <property name="symbolic-icons" type="bool" value="false"/>
     </property>
     <property name="plugin-14" type="empty"/>
     <property name="plugin-13" type="empty"/>
@@ -174,7 +190,7 @@
     <property name="plugin-8" type="string" value="applicationsmenu">
       <property name="show-button-title" type="bool" value="false"/>
     </property>
-    <property name="plugin-9" type="string" value="power-manager-plugin">
+    <property name="plugin-9" type="empty">
       <property name="style" type="empty"/>
     </property>
     <property name="plugin-10" type="string" value="cpugraph">

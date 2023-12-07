@@ -49,6 +49,7 @@ apt upgrade -y
 apt autopurge -y
 
 echo 'fs.inotify.max_user_watches = 524288' > /etc/sysctl.d/99-goland.conf
+echo 'fs.inotify.max_user_instances = 128000' >> /etc/sysctl.d/99-goland.conf
 echo 'module.nf_conntrack.parameters.hashsize = 131072' > /etc/sysctl.d/99-hashsize.conf
 
 if ! grep -q docker /etc/group; then groupadd -r docker; fi

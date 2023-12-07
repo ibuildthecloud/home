@@ -3,8 +3,6 @@
 	email = darren@acorn.io
 [diff]
 	tool = meld
-[reviewboard]
-	url = https://reviews.apache.org
 [color]
 	ui = auto
 [alias]
