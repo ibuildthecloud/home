@@ -1,8 +1,5 @@
 aptitude
 build-essential
-code
-dev-pod
-discord
 docker-buildx-plugin
 docker-ce
 gnome-themes-extra
@@ -11,15 +8,12 @@ grub-efi
 grub-efi-amd64-signed
 grub-pc-bin
 linux-firmware
-linux-generic-hwe-22.04
-microsoft-edge-dev
-minecraft-launcher
+linux-generic
 net-tools
 ngrok
 slack-desktop
 spotify-client
 syncthing
-teams
 ubuntu-minimal
 ubuntu-standard
 ubuntu-wallpapers
