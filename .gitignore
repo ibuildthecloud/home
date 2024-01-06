@@ -3,6 +3,7 @@
 !/.bashrc
 !/.bashrc.d
 /.bashrc.d/do
+/.bashrc.d/openapi
 !/.config
 /.config/*
 !/.config/xfce4
@@ -20,10 +21,11 @@
 /src/*
 !/src/.stignore
 
-/.config/xfce4/Verve/
 /.config/xfce4/desktop/
+/.config/xfce4/Verve/
 /.config/xfce4/xfce4-notes.gtkrc.BROOIZ
 /.local/bin/bazel
+/.local/bin/blincus
 /.local/bin/civo
 /.local/bin/clion
 /.local/bin/clion1
@@ -38,6 +40,9 @@
 /.local/bin/dolly
 /.local/bin/eksctl
 /.local/bin/finalizers
+/.local/bin/fleet
+/.local/bin/gateway
+/.local/bin/gencommitmsg.sh
 /.local/bin/gh
 /.local/bin/goland
 /.local/bin/helm
@@ -59,6 +64,7 @@
 /.local/bin/luet
 /.local/bin/manifest-tool
 /.local/bin/minikube
+/.local/bin/mps
 /.local/bin/ngrok
 /.local/bin/packer
 /.local/bin/protoc
@@ -66,6 +72,8 @@
 /.local/bin/rancher-helm
 /.local/bin/rancher-machine
 /.local/bin/rancher-tiller
+/.local/bin/rubymine
+/.local/bin/rustrover
 /.local/bin/skaffold
 /.local/bin/stern
 /.local/bin/Telegram

@@ -12,6 +12,7 @@ linux-generic
 net-tools
 ngrok
 slack-desktop
+socat
 spotify-client
 syncthing
 ubuntu-minimal
