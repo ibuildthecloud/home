@@ -2,7 +2,7 @@
 
 #export QT_SCALE_FACTOR=1.5
 #export GTK_THEME=Adwaita:dark
-export PATH=${HOME}/.local/bin:$PATH
+export PATH=${HOME}/.local/bin:/home/linuxbrew/.linuxbrew/bin:$PATH
 export BROWSER=${HOME}/.local/firefox/firefox
 
 #xcalib -c

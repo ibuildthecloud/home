@@ -1,6 +1,10 @@
-export PYTHONSTARTUP=~/.local/bin/startup.py
+if [ -e ~/.local/bin/startup.py ]; then
+    export PYTHONSTARTUP=~/.local/bin/startup.py
+fi
 
-PY38="${HOME}/.virtualenvs/py38/bin/activate"
-if [ -e ${PY38} ]; then
-    VIRTUAL_ENV_DISABLE_PROMPT=true source $PY38
+alias python=python3
+
+PYSHELL="${HOME}/.virtualenvs/shell/bin/activate"
+if [ -e ${PYSHELL} ]; then
+    VIRTUAL_ENV_DISABLE_PROMPT=true source $PYSHELL
 fi

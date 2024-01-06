@@ -15,6 +15,7 @@
 /.config/Microsoft
 /.config/syncthing
 /.config/xfce4/panel/cpugraph-1.rc
+/.docker/desktop
 /Downloads*
 /.helm
 /.glide

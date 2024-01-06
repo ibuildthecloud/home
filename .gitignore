@@ -42,7 +42,6 @@
 /.local/bin/finalizers
 /.local/bin/fleet
 /.local/bin/gateway
-/.local/bin/gencommitmsg.sh
 /.local/bin/gh
 /.local/bin/goland
 /.local/bin/helm
