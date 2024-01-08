@@ -2,8 +2,6 @@
 !/.backup.stignore
 !/.bashrc
 !/.bashrc.d
-/.bashrc.d/do
-/.bashrc.d/openapi
 !/.config
 /.config/*
 !/.config/xfce4
@@ -21,6 +19,8 @@
 /src/*
 !/src/.stignore
 
+/.bashrc.d/do
+/.bashrc.d/openai
 /.config/xfce4/desktop/
 /.config/xfce4/Verve/
 /.config/xfce4/xfce4-notes.gtkrc.BROOIZ
