@@ -1,4 +1,5 @@
 oss
+*/.venv
 */bin
 */dist
 */installer_files

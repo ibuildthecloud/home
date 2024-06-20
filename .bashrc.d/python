@@ -3,8 +3,12 @@ if [ -e ~/.local/bin/startup.py ]; then
 fi
 
 alias python=python3
+alias mkvenv="virtualenv .venv; source .venv/bin/activate; pip install -r requirements.txt"
 
 PYSHELL="${HOME}/.virtualenvs/shell/bin/activate"
 if [ -e ${PYSHELL} ]; then
     VIRTUAL_ENV_DISABLE_PROMPT=true source $PYSHELL
+    unset _OLD_VIRTUAL_PS1
+    unset _OLD_VIRTUAL_PYTHONHOME
+    unset _OLD_VIRTUAL_PATH
 fi

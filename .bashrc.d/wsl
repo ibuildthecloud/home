@@ -1,0 +1,6 @@
+if [ -e /mnt/c ]; then
+    PROMPT_COMMAND=${PROMPT_COMMAND:+"$PROMPT_COMMAND; "}'printf "\e]9;9;%s\e\\" "$(wslpath -w "$PWD")"'
+    export BROWSER=msedge
+else
+    export BROWSER=microsoft-edge-beta
+fi

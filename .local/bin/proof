@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gptscript -q -f - eval Proof read the input and fix any grammatical errors
