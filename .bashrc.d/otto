@@ -1,0 +1,3 @@
+if [ -e "$(command -v otto8)" ]; then
+    source <(otto8 completion bash)
+fi

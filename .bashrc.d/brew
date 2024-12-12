@@ -1,0 +1,3 @@
+if [ $(uname -m) == aarch64 ]; then
+    export HOMEBREW_BUILD_FROM_SOURCE=1
+fi

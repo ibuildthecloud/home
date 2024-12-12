@@ -19,8 +19,7 @@
 /src/*
 !/src/.stignore
 
-/.bashrc.d/do
-/.bashrc.d/openai
+/.bashrc.d/keys
 /.config/xfce4/desktop/
 /.config/xfce4/Verve/
 /.config/xfce4/xfce4-notes.gtkrc.BROOIZ

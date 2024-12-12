@@ -1,0 +1,3 @@
+if [ "$(ulimit -n)" -lt 65536 ]; then
+    ulimit -n 65536
+fi

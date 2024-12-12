@@ -1,2 +1,4 @@
-source <(acorn completion bash)
-alias acron=acorn
+if [ -e "$(command -v acorn)" ]; then
+    source <(acorn completion bash)
+    alias acron=acorn
+fi

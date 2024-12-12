@@ -114,7 +114,13 @@ if ! shopt -oq posix; then
 fi
 
 for i in ${HOME}/.bashrc.d/*; do
-    if [ -e "$i" ]; then
+    if [ -f "$i" ]; then
+        source $i
+    fi
+done
+
+for i in ${HOME}/.bashrc.d/keys/*; do
+    if [ -f "$i" ]; then
         source $i
     fi
 done

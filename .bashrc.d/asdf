@@ -1,0 +1,3 @@
+if [ -e /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh ]; then
+    . /home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh
+fi

@@ -2,5 +2,8 @@ oss
 */.venv
 */bin
 */dist
+node_modules
+*/node_modules
+*/*/node_modules
 */installer_files
 text-generation-webui/models

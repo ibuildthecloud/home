@@ -3,7 +3,7 @@
 #export QT_SCALE_FACTOR=1.5
 #export GTK_THEME=Adwaita:dark
 export PATH=${HOME}/.local/bin:/home/linuxbrew/.linuxbrew/bin:$PATH
-export BROWSER=${HOME}/.local/firefox/firefox
+export BROWSER=microsoft-edge-beta
 
 #xcalib -c
 #xcalib -a -red 1 0 70 -green 1 0 80 -blue 1 0 90
